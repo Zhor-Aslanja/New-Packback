@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.div1{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-color: blue;
+}
+
+.div2{
+	width: 100%;
+	height: 15%;
+	align-items: center;
+}
+
+.d21{
+	width: 65px;
+	height: 100%;
+	background-color: #EB4C42FF;
+}
+
+.d22{
+	width: 15px;
+	background-color: #EB4C42FF;
+}
+
+.div3{
+	width: 100%;
+	height: 65%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+}
+
+.d32{
+	width: 50%;
+	height: 50%;
+}

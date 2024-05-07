@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.main{
+			width: 100%;
+			height: 100vh;
+			background-image: linear-gradient(to right bottom,skyblue, lightskyblue, #fff);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.register, .login{
+			width: 40%;
+			height: 70%;
+			background-color: #fff;
+			border: 10px double skyblue;
+			border-radius: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-direction: column;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		input{
+			width: 100%;
+			height: 12%;
+			border: none;
+			background-color: lightskyblue;
+			border-radius: 10px;
+			color: #fff;
+			padding: 0 25px;
+			box-sizing: border-box;
+			font-size: 20px;
+			font-family: monospace;
+			transform: 1s all;
+			font-weight: 700;
+		}
+		input:focus,button:focus{
+			outline: none;
+			background-color: skyblue;
+			color: #fff;
+		}
+		input:hover,button:hover{
+			background-color: lightblue;
+		}
+		input::placeholder{
+			color: #fff;
+		}
+		input:active{
+			background-color: yellow;
+		}
+		.login input{
+			height: 30%;
+		}
+		.login{
+			display: none;
+		}
+		.login button{
+			height: 20%;
+		}
+		button{
+			width: 100%;
+			height: 15%;
+			border: none;
+			background-color: lightskyblue;
+			border-radius: 10px;
+			color: #fff;
+			padding: 0 25px;
+			box-sizing: border-box;
+			font-size: 20px;
+			font-family: monospace;
+			transform: 1s all;
+			font-weight: 700;
+		}
+		.message{
+			background-color: #fff;
+			border: 2px solid red;
+			color: red;
+			border-radius: 10px;
+			position: absolute;
+			top: 20px;
+			padding: 5px 10px;
+		}
+		.page{
+			width: 100%;
+			height: 100vh;
+			background-color: red;
+			display: none;
+			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="register">
+			<input type="text" name="" id="nm" placeholder="Enter Your Name">
+			<input type="text" name="" id="sn" placeholder="Enter Your Surname">
+			<input type="mail" name="" id="em" placeholder="Enter Email">
+			<input type="password" name="" id="pas" placeholder="Enter Password">
+			<input type="password" name="" id="pass" placeholder="Enter Password">
+			<button id="reg">Sign Up</button>
+		</div>
+	<div class="login">
+		<input type="mail" name="" id="log_em" placeholder="Enter Email">
+		<input type="password" name="" id="log_pas" placeholder="Enter Password">
+		<button id="log_but">Sing In</button>
+	</div>
+	<div class="page">
+		<div class="menu"></div>
+	</div>
+</div>
+	<script src="script.js"></script>	
+</body>
+</html>
